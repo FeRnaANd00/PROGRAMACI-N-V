@@ -26,4 +26,19 @@ public int InsertarMarca (Marca marca){
     }
     return n;
 }
+
+public int ModificarMarca(Marca marca){
+ int n = 0;
+  
+    try{
+        sql = conectar().prepareCall("UPDATE Marca SET Nombre=?" + "WHERE Id=?");
+        sql.setString(1, marca.getNombre());
+        sql.setInt(2, marca.getId());
+        n = sql.executeUpdate();
+        sql.close();
+    }catch(Exception ex){
+        ex.printStackTrace();
+    }
+    return n;
+}
 }
