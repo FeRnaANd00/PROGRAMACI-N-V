@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.1" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_1.xsd">
+    <servlet>
+        <servlet-name>SumaNumeros</servlet-name>
+        <servlet-class>Ejemplos.SumaNumeros</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>rectangulo</servlet-name>
+        <servlet-class>Ejemplos.rectangulo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>NombreApell</servlet-name>
+        <servlet-class>Ejemplos.NombreApell</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>datos</servlet-name>
+        <servlet-class>Ejemplos.datos</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>notas</servlet-name>
+        <servlet-class>Ejemplos.notas</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SumaNumeros</servlet-name>
+        <url-pattern>/sumanumeros</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>rectangulo</servlet-name>
+        <url-pattern>/rectangulo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>NombreApell</servlet-name>
+        <url-pattern>/NombreApell</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>datos</servlet-name>
+        <url-pattern>/datos</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>notas</servlet-name>
+        <url-pattern>/notas</url-pattern>
+    </servlet-mapping>
+</web-app>

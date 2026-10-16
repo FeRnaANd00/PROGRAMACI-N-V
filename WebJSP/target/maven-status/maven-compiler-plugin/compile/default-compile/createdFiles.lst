@@ -1,0 +1,5 @@
+com\uma\webjsp\JakartaRestConfiguration.class
+com\uma\webjsp\servlets\operaciones.class
+com\uma\webjsp\resources\JakartaEE11Resource.class
+com\uma\webjsp\servlets\factorial.class
+com\uma\webjsp\servlets\salario.class
