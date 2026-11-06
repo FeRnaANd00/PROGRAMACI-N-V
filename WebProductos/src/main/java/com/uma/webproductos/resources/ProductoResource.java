@@ -18,14 +18,14 @@ public class ProductoResource {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response listar() {
-        List<Producto> lista = dao.listarProductos();
+        List<Producto> lista = dao.MostrarProductos();
         return Response.ok(lista).build();
     }
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     public Response crear(Producto p) {
-        int n = dao.insertarProducto(p);
+        int n = dao.InsertarProducto(p);
         if (n > 0) {
             return Response.status(Response.Status.CREATED).entity("Producto creado").build();
         }
