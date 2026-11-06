@@ -1,8 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
-   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
-   version="6.0">
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>MarcaController1</servlet-name>
+        <servlet-class>com.uma.webproductos.controllers.MarcaController1</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProductoController</servlet-name>
+        <servlet-class>com.uma.webproductos.controllers.ProductoController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UsuarioController</servlet-name>
+        <servlet-class>com.uma.webproductos.controllers.UsuarioController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MarcaController1</servlet-name>
+        <url-pattern>/marca</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProductoController</servlet-name>
+        <url-pattern>/producto</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UsuarioController</servlet-name>
+        <url-pattern>/usuario</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30

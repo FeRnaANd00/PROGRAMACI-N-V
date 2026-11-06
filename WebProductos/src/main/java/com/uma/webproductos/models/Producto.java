@@ -1,12 +1,13 @@
 package com.uma.webproductos.models;
+
 import java.io.InputStream;
 
 public class Producto {
-int id;
-String nombre;
-float precio;
-InputStream imagen;
-Marca marca;
+    int id;
+    String nombre;
+    float precio;
+    InputStream imagen;
+    Marca marca;
 
     public Producto() {
     }
@@ -58,6 +59,4 @@ Marca marca;
     public void setMarca(Marca marca) {
         this.marca = marca;
     }
-
-
 }

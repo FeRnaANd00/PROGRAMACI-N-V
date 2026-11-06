@@ -1,11 +1,10 @@
-
 package com.uma.webproductos.models;
 
 public class Conexion {
     String driver = "org.mariadb.jdbc.Driver";
-    String url = "jdbc:mariadb://localhost:3306/productosBD";
+    String url = "jdbc:mariadb://localhost:3307/ProductosBD";
     String user = "root";
-    String password = "$Fernando0";
+    String password = "lest81";
 
     public String getDriver() {
         return driver;
@@ -38,6 +37,4 @@ public class Conexion {
     public void setPassword(String password) {
         this.password = password;
     }
-
 }
-
